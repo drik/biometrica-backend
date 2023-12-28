@@ -1,0 +1,9 @@
+{
+  "biometricaApp": {
+    "HandName": {
+      "null": "",
+      "RIGHT_HAND": "Right",
+      "LEFT_HAND": "Left"
+    }
+  }
+}

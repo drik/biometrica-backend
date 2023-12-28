@@ -1,0 +1,11 @@
+export enum FingerName {
+  PINKY_FINGER = 'Pinky',
+
+  RING_FINGER = 'Ring',
+
+  MIDDLE_FINGER = 'Middle',
+
+  INDEX_FINGER = 'Index',
+
+  THUMB_FINGER = 'Thumb',
+}

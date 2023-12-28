@@ -1,0 +1,27 @@
+{
+  "biometricaApp": {
+    "fingerprint": {
+      "home": {
+        "title": "Fingerprints",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Fingerprint",
+        "createOrEditLabel": "Créer ou éditer un Fingerprint",
+        "notFound": "Aucun Fingerprint trouvé"
+      },
+      "created": "Un nouveau Fingerprint a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Fingerprint avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Fingerprint avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Fingerprint {{ id }} ?"
+      },
+      "detail": {
+        "title": "Fingerprint"
+      },
+      "id": "ID",
+      "uuid": "Uuid",
+      "fingerName": "Finger Name",
+      "handName": "Hand Name",
+      "template": "Template"
+    }
+  }
+}
