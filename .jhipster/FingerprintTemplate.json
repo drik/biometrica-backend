@@ -1,0 +1,35 @@
+{
+  "annotations": {
+    "changelogDate": "20231228201850"
+  },
+  "applications": "*",
+  "entityTableName": "fingerprint_template",
+  "fields": [
+    {
+      "fieldName": "templateVersion",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "templateData",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "any"
+    },
+    {
+      "fieldName": "originalImage",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    },
+    {
+      "fieldName": "originalImageMime",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "originalImageExtension",
+      "fieldType": "String"
+    }
+  ],
+  "name": "FingerprintTemplate",
+  "relationships": [],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

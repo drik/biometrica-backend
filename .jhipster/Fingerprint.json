@@ -1,0 +1,37 @@
+{
+  "annotations": {
+    "changelogDate": "20231228201750"
+  },
+  "applications": "*",
+  "entityTableName": "fingerprint",
+  "fields": [
+    {
+      "fieldName": "uuid",
+      "fieldType": "UUID",
+      "fieldValidateRules": ["required", "unique"]
+    },
+    {
+      "fieldName": "fingerName",
+      "fieldType": "FingerName",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "PINKY_FINGER (Pinky),RING_FINGER (Ring),MIDDLE_FINGER (Middle),INDEX_FINGER (Index),THUMB_FINGER (Thumb)"
+    },
+    {
+      "fieldName": "handName",
+      "fieldType": "HandName",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "RIGHT_HAND (Right),LEFT_HAND (Left)"
+    }
+  ],
+  "name": "Fingerprint",
+  "relationships": [
+    {
+      "otherEntityName": "fingerprintTemplate",
+      "relationshipName": "template",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

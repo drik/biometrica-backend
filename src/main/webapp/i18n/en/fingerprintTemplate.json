@@ -1,0 +1,28 @@
+{
+  "biometricaApp": {
+    "fingerprintTemplate": {
+      "home": {
+        "title": "Fingerprint Templates",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Fingerprint Template",
+        "createOrEditLabel": "Create or edit a Fingerprint Template",
+        "notFound": "No Fingerprint Templates found"
+      },
+      "created": "A new Fingerprint Template is created with identifier {{ param }}",
+      "updated": "A Fingerprint Template is updated with identifier {{ param }}",
+      "deleted": "A Fingerprint Template is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Fingerprint Template {{ id }}?"
+      },
+      "detail": {
+        "title": "Fingerprint Template"
+      },
+      "id": "ID",
+      "templateVersion": "Template Version",
+      "templateData": "Template Data",
+      "originalImage": "Original Image",
+      "originalImageMime": "Original Image Mime",
+      "originalImageExtension": "Original Image Extension"
+    }
+  }
+}
