@@ -1,0 +1,42 @@
+
+entity Fingerprint {
+	uuid UUID required unique
+    fingerName FingerName required
+    handName HandName required
+}
+
+entity FingerprintTemplate {
+    templateVersion String
+    templateData AnyBlob
+    originalImage ImageBlob
+    originalImageMime String
+    originalImageExtension String
+}
+
+enum FingerName {
+	PINKY_FINGER(Pinky), 
+    RING_FINGER(Ring), 
+    MIDDLE_FINGER(Middle), 
+    INDEX_FINGER(Index), 
+    THUMB_FINGER(Thumb)
+}
+
+enum HandName {
+	RIGHT_HAND(Right), 
+    LEFT_HAND(Left)
+}
+
+
+relationship OneToOne {
+	Fingerprint{template} to FingerprintTemplate
+}
+
+
+// Use Data Transfer Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
